@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit"><!-- 360开启急速模式！-->
+    <link rel="stylesheet" href="__PUBLIC__/uikit/css/uikit.min.css" />
+	
+</head>
+<body>
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/jquery.min.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/uikit.min.js"></script>
+<style>
+    .mainimg img{height:55px;width: 165px}
+	.header-img img{height:90%;width:100%}
+	.cooper-img img{width:100%}
+	
+</style>
+
+<!--导航栏-->
+<div style="">
+    <div style="display:inline-table;margin-left: 10%;" class="mainimg">
+        <nav class="uk-navbar">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent">
+                    <img src="__PUBLIC__/pic/1.png">
+                </li>
+            </ul>
+        </nav>	
+    </div>
+    <div style="display:inline-table;margin-left: 15%   ;background-color: white" class="mainimg">
+        <nav class="uk-navbar">
+            <ul class="uk-navbar-nav uk-nav-sub " style="background-color: white">
+                <li class="index"><a href="/index.php/index/index/index"><span class="">首页</span></a></li>
+                <li	class="company"><a href="/index.php/index/index/company">公司简介</a></li>
+                <li class="game"><a href="/index.php/index/index/game">游戏中心</a></li>
+                <li class="news"><a href="/index.php/index/index/news">新闻中心</a></li>
+                <li class="cooperation"><a href="/index.php/index/index/cooperation">商务合作</a></li>
+                <li class="contact"><a href="/index.php/index/index/contact">联系我们</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+<!--为导航给选定样式-->
+<script>
+	 $("li.{$action}").addClass('uk-active');
+</script>

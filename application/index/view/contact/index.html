@@ -1,0 +1,92 @@
+{include file="header" /}
+
+<link rel="stylesheet" href="__PUBLIC__/time/css/history.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/slideshow.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/dotnav.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/slidenav.css" />
+<link rel="stylesheet" href="__PUBLIC__/uikit/css/components/slider.css" />
+
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/components/slideshow.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/uikit/js/components/slider.js"></script>
+<script  type="text/javascript" src="__PUBLIC__/time/js/main.js"></script>
+
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+<div style="" class="uk-slidenav-position" data-uk-slideshow="">
+    <ul class="uk-slideshow " style="height: auto">
+		<li>
+			<img src="__PUBLIC__/pic/company.png" width="" height="" alt="">       
+        </li>  
+    </ul>
+</div>
+
+
+<div style="margin-top:20px;"  class="uk-grid">
+	<div class="uk-slidenav-position uk-width-1-6"></div>
+	<div class="uk-slidenav-position uk-width-4-6" >
+		<ul class="uk-tab" data-uk-tab>
+			<li class="uk-active"><a onclick="javascript:addRecord(1)">人才招聘</a></li>
+			<li><a onclick="javascript:addRecord(2)" >联系方式</a></li>
+		</ul>
+	</div>
+	<div class="uk-slidenav-position uk-width-1-6"></div>	
+</div>
+
+<div style="margin-top:15px;"  class="uk-grid">
+	<div class="uk-slidenav-position uk-width-1-6"></div>
+	<div class="uk-slidenav-position uk-width-4-6" >
+		<!--企业介绍 -->
+		<div id="id_1" class="uk-slider-container" style="display:block">
+			<img src="__PUBLIC__/pic/company_culture.png" width="" height="" alt=""> 
+			<div style="margin-top:10px">
+				<article class="uk-article">
+					<div class="uk-grid"> 
+						<div class="uk-slidenav-position uk-width-2-5"></div>
+						<span class="uk-text-large ">公司简介</span>
+					</div>
+					<p class="uk-article-meta">
+						余从京域，言归东藩，背伊阙 ，越轘辕，经通谷，陵景山。日既西倾，车殆马烦。尔乃税驾乎蘅皋，秣驷乎芝田，容与乎阳林，流眄乎洛川。于是精移神骇，忽焉思散。俯则未察，仰以殊观。睹一丽人，于岩之畔。乃援御者而告之曰：“尔有觌于彼者乎？彼何人斯，若此之艳也！”御者对曰：“臣闻河洛之神，名曰宓妃。然则君王所见，无乃是乎？其状若何，臣愿闻之。”
+					</p>
+				</article>
+			</div>	
+		</div>
+		
+		<!--企业文化 -->
+		<div id="id_2" class="uk-slider-container" style="display:none">
+			<div style="">
+				<article class="uk-article">
+					<p class="uk-article-meta">
+						广州荣端软件科技有限公司<br/>
+						人力资源部：郑小姐<br/>
+						座机：020-85200243<br/>
+						邮箱：zhengfangyan@rodgm.com<br/>
+						公司地址：广州市天河区龙口东路129号龙泽商业大厦1203A<br/>
+					</p><br/>
+					<iframe src="map.html" width="800px" height="500px" frameborder="0" scrolling="no"></iframe>
+					
+				</article>
+			</div>		
+		</div>
+		
+		
+	</div>
+	<div class="uk-slidenav-position uk-width-1-6"></div>	
+</div>	
+
+
+
+
+<script>
+	var addRecord = function(j){
+		var i;
+		for(i=1;i<=2;i++) {
+			if(i == j){$("#id_"+j).show();}
+			else $("#id_"+i).hide();
+		}
+		 
+	}
+	
+</script>
+
+{include file="footer" /}
